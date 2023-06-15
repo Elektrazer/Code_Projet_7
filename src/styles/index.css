@@ -1,0 +1,52 @@
+.kasa-header {
+  display: flex;
+  height: 5%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kasa-logo {
+  height: 100%;
+  width: 20%;
+}
+.kasa-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+.Navigation ul {
+  display: flex;
+  list-style-type: none;
+  margin: 30px;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+.Navigation ul a {
+  text-decoration: none;
+  padding: 15px;
+}
+
+.ImageAccueil {
+  width: 85%;
+  height: 170px;
+  background: url("../../assets/ImageAccueil.png") center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 15px;
+}
+.ImageAccueil span {
+  font-size: 30px;
+}
+.ImageAccueil ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}/*# sourceMappingURL=index.css.map */

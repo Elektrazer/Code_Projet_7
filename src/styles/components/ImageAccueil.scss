@@ -1,0 +1,32 @@
+@import "../settings.scss";
+
+
+.ImageAccueil {
+    margin: 0 auto;
+    width: 95%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 15px;
+    position: relative;
+    span {
+        font-size: 35px;
+    }
+}
+
+.ImageAccueil::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/ImageAccueil.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    border-radius: 15px;
+}

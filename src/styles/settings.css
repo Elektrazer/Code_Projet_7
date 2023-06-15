@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../assets/fonts/Montserrat-Regular.ttf);
+}
+body {
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+}/*# sourceMappingURL=settings.css.map */

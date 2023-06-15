@@ -1,0 +1,40 @@
+.DropdownMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;    
+    background: #FF6060;
+    border-radius: 5px;
+    width: 90%;
+    margin: 20px auto;
+    color: white;
+}
+
+.DropdownTitle {
+    padding-left: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.buttonDropdown {
+    height: 40px;
+    background-color: #FF6060;
+    border: none;
+    border-radius: 15px;
+    color: #F7F7F7;
+}
+
+.Fleche {
+    height: 100%;
+}
+
+.DropdownText {
+   background-color: #F7F7F7;
+   border-radius: 5px;
+   color: #FF6060;
+   font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 142.6%;
+}
