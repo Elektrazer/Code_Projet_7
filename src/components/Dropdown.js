@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Montante from "../assets/Flechemontante.png";
-import Descendante from "../assets/Flechedescendante.png";
 
 function Dropdown() {
   const [isOpen, setIsOpen] = useState([]);
