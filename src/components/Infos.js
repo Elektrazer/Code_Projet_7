@@ -6,9 +6,14 @@ const Infos = () => {
   const { id } = useParams();
   const location = locationList.find((location) => location.id === id);
   const [isDescriptionOpen, setDescriptionOpen] = useState(false);
+  const [isEquipmentsOpen, setEquipmentsOpen] = useState(false);
 
   const handleDescriptionToggle = () => {
     setDescriptionOpen(!isDescriptionOpen);
+  };
+
+  const handleEquipmentsToggle = () => {
+    setEquipmentsOpen(!isEquipmentsOpen);
   };
 
   return (
@@ -30,13 +35,13 @@ const Infos = () => {
       <div className="DropdownMenuInfos">
         <span className="DropdownTitle">Equipements</span>
         <button
-          onClick={handleDescriptionToggle}
+          onClick={handleEquipmentsToggle}
           className="buttonDropdownInfos"
         >
-          {isDescriptionOpen ? <span>&#x25B2;</span> : <span>&#x25BC;</span>}
+          {isEquipmentsOpen ? <span>&#x25B2;</span> : <span>&#x25BC;</span>}
         </button>
-        {isDescriptionOpen && (
-          <div className="DropdownTextInfos">
+        {isEquipmentsOpen && (
+          <div className="DropdownContent">
             <ul>
               {location.equipments.map((equipment, index) => (
                 <li key={index}>{equipment}</li>
