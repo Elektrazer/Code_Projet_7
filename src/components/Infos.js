@@ -42,7 +42,7 @@ const Infos = () => {
         </button>
         {isEquipmentsOpen && (
           <div className="DropdownContent">
-            <ul>
+            <ul className="DropdownList">
               {location.equipments.map((equipment, index) => (
                 <li key={index}>{equipment}</li>
               ))}

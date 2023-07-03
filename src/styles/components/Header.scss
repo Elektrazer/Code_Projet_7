@@ -1,6 +1,6 @@
 .kasa-header {
     display: flex;
-    height: 5%;
+    height: 100px;
     width: 95%;
     justify-content: space-between;
     align-items: center;
@@ -10,18 +10,21 @@
 .kasa-logo {
     height: 100%;
     width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     img {
         max-width: 100%;
         max-height: 100%;
-        margin: 0 auto;
     }
 }
 
 .Navigation {
+
     ul {
         display: flex;
         list-style-type: none;
-        margin: 30px;
+        margin-bottom: 30px;
         padding-inline-start: 0;
         a {
             text-decoration: none;
@@ -29,8 +32,14 @@
         }
         li{
             color: #FF6060;
-            font-size: 20px;
+            font-size: 25px;
         }
     }
 
+}
+
+@media screen and (max-width: 600px) {
+    .kasa-header {
+        height: 20%;
+    }
 }

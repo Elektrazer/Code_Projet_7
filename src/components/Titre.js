@@ -1,15 +1,11 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import locationList from "../datas/LocationList";
 import Rating from "./Rating";
 
 const Titre = () => {
   const { id } = useParams();
   const location = locationList.find((location) => location.id === id);
-
-  if (!location) {
-    return <div>Location introuvable.</div>;
-  }
 
   return (
     <div className="Location">

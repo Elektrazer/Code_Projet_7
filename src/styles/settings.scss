@@ -8,7 +8,13 @@ $font-1: "Montserrat", sans-serif;
 body {
     position: relative;
     width: 1440px;
-    height: 1024px;
+    height: auto;
     margin: 0 auto;
     font-family: $font-1;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 500px;
+    }
 }

@@ -50,7 +50,7 @@
 .InfosHote {
     display: flex;
     justify-content: center;
-    align-items: flex-end; 
+    align-items: flex-end;
     flex-direction: column;
 }
 
@@ -64,4 +64,17 @@
     display: flex;
     justify-content: center;
     align-items: center; 
+}
+
+@media screen and (max-width: 600px) {
+    .InfosHote {
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 100%;
+    }
+
+    .LocationTitle {
+        margin-right: 0;
+        margin-bottom: 5%;
+    }
 }

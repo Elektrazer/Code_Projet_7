@@ -32,3 +32,16 @@
     left: 5%;
     color: #FFF;
 }
+
+@media screen and (max-width: 600px) {
+    .CardList {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        height: 400px;
+        width: 450px;
+    }
+}
