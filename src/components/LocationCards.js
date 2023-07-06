@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Location = () => {
   return (
-    <div>
+    <div className="CardContainer">
       <ul className="CardList">
         {locationlist.map((location) => (
           <Link to={`/location/${location.id}`}>

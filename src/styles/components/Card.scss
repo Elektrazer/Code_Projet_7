@@ -45,3 +45,24 @@
         width: 450px;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .card {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .card {
+        height: 250px;
+        width: 90%;
+    }
+    .CardList {
+        width: 95%;
+    }
+    .CardContainer {
+        width: 100%;
+        margin: 0 auto;
+    }
+}

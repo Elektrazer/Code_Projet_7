@@ -78,3 +78,10 @@
         margin-bottom: 5%;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .HoteName {
+        margin-right: 0;
+        width: 100px;
+    }
+}

@@ -16,3 +16,18 @@
     font-size: 30px;
     color: #FF6060;
 }
+
+@media screen and (max-width:400px) {
+
+    .Error {
+        width: 95%;
+    }
+
+    .ErrorNumber {
+        font-size: 150px;
+    }
+    .ErrorExp {
+        font-size: 25px;
+        padding-right: 15px;
+    }
+}
