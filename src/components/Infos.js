@@ -18,12 +18,9 @@ const Infos = () => {
 
   return (
     <div className="DropdownInfos">
-      <div className="DropdownMenuInfos">
+      <div className="DropdownMenuInfos" onClick={handleDescriptionToggle}>
         <span className="DropdownTitle">Description</span>
-        <button
-          onClick={handleDescriptionToggle}
-          className="buttonDropdownInfos"
-        >
+        <button className="buttonDropdownInfos">
           {isDescriptionOpen ? <span>&#x25B2;</span> : <span>&#x25BC;</span>}
         </button>
         {isDescriptionOpen && (
@@ -32,12 +29,9 @@ const Infos = () => {
           </div>
         )}
       </div>
-      <div className="DropdownMenuInfos">
+      <div className="DropdownMenuInfos" onClick={handleEquipmentsToggle}>
         <span className="DropdownTitle">Equipements</span>
-        <button
-          onClick={handleEquipmentsToggle}
-          className="buttonDropdownInfos"
-        >
+        <button className="buttonDropdownInfos">
           {isEquipmentsOpen ? <span>&#x25B2;</span> : <span>&#x25BC;</span>}
         </button>
         {isEquipmentsOpen && (

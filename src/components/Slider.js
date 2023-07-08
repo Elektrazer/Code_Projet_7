@@ -28,6 +28,21 @@ const Slider = (props) => {
     return null;
   }
 
+  if (location.pictures.length <= 1) {
+    return (
+      <div className="slider">
+        <div className="slideActive">
+          <img
+            key={currentIndex}
+            src={location.pictures}
+            alt={`Intérieur de ${location.title}`}
+            className="slidesImage"
+          />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="slider">
       <div className="leftArrow" onClick={previousSlide}>
@@ -35,6 +50,9 @@ const Slider = (props) => {
       </div>
       <div className="rightArrow" onClick={nextSlide}>
         ❯
+      </div>
+      <div className="currentIndex">
+        {currentIndex + 1} / {location.pictures.length}
       </div>
       {location.pictures.map((url, index) => {
         return (
@@ -44,7 +62,7 @@ const Slider = (props) => {
           >
             {index === currentIndex && (
               <img
-                key={index}
+                key={currentIndex}
                 src={url}
                 alt={`Intérieur de ${location.title}`}
                 className="slidesImage"

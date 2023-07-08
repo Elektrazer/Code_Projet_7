@@ -1,8 +1,14 @@
 import React from "react";
 import logo from ".././assets/logo.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
+
+  const isActivePage = (path) => {
+    return location.pathname === path;
+  };
+
   return (
     <div className="kasa-header">
       <div className="kasa-logo">
@@ -11,12 +17,24 @@ const Header = () => {
 
       <div className="Navigation">
         <ul>
-          <NavLink to="/">
-            <li>Accueil</li>
-          </NavLink>
-          <NavLink to="/About">
-            <li>A Propos</li>
-          </NavLink>
+          <li>
+            <NavLink
+              to="/"
+              style={isActivePage("/") ? { textDecoration: "underline" } : {}}
+            >
+              Accueil
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/About"
+              style={
+                isActivePage("/About") ? { textDecoration: "underline" } : {}
+              }
+            >
+              A Propos
+            </NavLink>
+          </li>
         </ul>
       </div>
     </div>

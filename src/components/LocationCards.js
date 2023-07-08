@@ -8,8 +8,8 @@ const Location = () => {
     <div className="CardContainer">
       <ul className="CardList">
         {locationlist.map((location) => (
-          <Link to={`/location/${location.id}`}>
-            <Card key={location.id} location={location} />
+          <Link to={`/location/${location.id}`} key={location.id}>
+            <Card location={location} />
           </Link>
         ))}
       </ul>

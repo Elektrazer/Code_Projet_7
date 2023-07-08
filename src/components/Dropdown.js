@@ -43,12 +43,13 @@ function Dropdown() {
   return (
     <div className="Dropdown">
       {menus.map((menu) => (
-        <div key={menu.id} className="DropdownMenu">
+        <div
+          key={menu.id}
+          className="DropdownMenu"
+          onClick={() => handleToggle(menu.id)}
+        >
           <span className="DropdownTitle">{menu.title}</span>
-          <button
-            onClick={() => handleToggle(menu.id)}
-            className="buttonDropdown"
-          >
+          <button className="buttonDropdown">
             {isOpen.includes(menu.id) ? (
               <span>&#9650;</span>
             ) : (

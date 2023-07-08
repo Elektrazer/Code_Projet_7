@@ -38,6 +38,17 @@
    user-select: none;
  }
 
+ .currentIndex {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    z-index: 11;
+    color: white;
+ }
+
  .slideActive {
    opacity: 1;
    transition-duration: 1s;

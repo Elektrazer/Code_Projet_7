@@ -26,17 +26,23 @@
         list-style-type: none;
         margin-bottom: 30px;
         padding-inline-start: 0;
-        a {
-            text-decoration: none;
-            padding: 15px;
-        }
+        
         li{
-            color: #FF6060;
-            font-size: 25px;
+            a {
+                text-decoration: none;
+                padding: 15px;
+                color: #FF6060;
+                font-size: 25px;
+                .active {
+                    text-decoration: underline;
+                   
+               }
+            }
         }
     }
 
 }
+
 
 @media screen and (max-width: 600px) {
     .kasa-header {
